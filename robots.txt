@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+
+# 크롤링 허용 파일
+Allow: /index.html
+Allow: /images/
+Allow: /public/
+
+# 크롤링 차단 파일 (필요 시)
+# Disallow: /admin/
+# Disallow: /private/
+
+# 사이트맵 위치
+Sitemap: https://example.com/sitemap.xml
+
+# 크롤링 속도 조절 (선택사항)
+# Crawl-delay: 1
+
+# 구글봇 전용 설정
+User-agent: Googlebot
+Allow: /
+
+# 네이버 검색봇 전용 설정
+User-agent: Yeti
+Allow: /
+
+# Bing 검색봇 전용 설정
+User-agent: Bingbot
+Allow: /

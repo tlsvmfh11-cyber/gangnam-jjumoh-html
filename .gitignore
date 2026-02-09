@@ -1,0 +1,36 @@
+# 원본 이미지 파일 제외 (WebP로 변환됨)
+public/*.jpg
+public/*.jpeg
+public/*.png
+!public/favicon*.png
+!public/apple-touch-icon.png
+
+# 시스템 파일
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 에디터 설정
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 로그
+*.log
+
+# 임시 파일
+*.tmp
+*.temp
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.egg-info/
+
+# Node.js (필요시)
+node_modules/
+package-lock.json
