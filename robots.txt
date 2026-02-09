@@ -1,29 +1,61 @@
+# 강남 쩜오 완벽 가이드 - Robots.txt
+# https://jjumoh-gangnam.com/
+
+# 기본 크롤러 설정
 User-agent: *
 Allow: /
+Disallow: /css/
+Disallow: /js/
 
 # 크롤링 허용 파일
 Allow: /index.html
 Allow: /images/
 Allow: /public/
 
-# 크롤링 차단 파일 (필요 시)
-# Disallow: /admin/
-# Disallow: /private/
-
 # 사이트맵 위치
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://jjumoh-gangnam.com/sitemap.xml
 
-# 크롤링 속도 조절 (선택사항)
-# Crawl-delay: 1
-
-# 구글봇 전용 설정
+# 구글봇 전용 설정 (최우선)
 User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /public/
+
+User-agent: Googlebot-Mobile
 Allow: /
 
 # 네이버 검색봇 전용 설정
 User-agent: Yeti
 Allow: /
+Crawl-delay: 0
 
 # Bing 검색봇 전용 설정
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 0
+
+# 기타 주요 검색 엔진
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# 악성 봇 차단
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
